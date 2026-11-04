@@ -369,7 +369,7 @@ div[data-testid="stVerticalBlockBorderWrapper"] {
     </div>
 
  
-    </div>
+    
 """, unsafe_allow_html=True)
 
 st.info(
