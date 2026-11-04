@@ -106,9 +106,37 @@ def infer_places(places, days, season, vibes, group, budget, transport, start_re
     fired = []
     def rule(code, condition, message):
         if condition: fired.append(f"{code} — {message}")
-    rule("D1", days <= 2, "Short trip: favour a compact route and avoid over-scheduling.")
-    rule("D2", 3 <= days <= 4, "Medium trip: use a main region plus a nearby region where possible.")
-    rule("D3", days >= 5, "Long trip: spread sightseeing across Goa's three regions with a lighter day.")
+    # Trip duration rules
+
+rule("D1", days == 1,
+     "One-day trip: select the best attractions in one region.")
+
+rule("D2", days == 2,
+     "Two-day trip: create a compact regional itinerary.")
+
+rule("D3", days == 3,
+     "Three-day trip: explore two nearby regions.")
+
+rule("D4", days == 4,
+     "Four-day trip: balance sightseeing across two regions.")
+
+rule("D5", days == 5,
+     "Five-day trip: explore all three regions.")
+
+rule("D6", days == 6,
+     "Six-day trip: distribute sightseeing across all three regions.")
+
+rule("D7", days == 7,
+     "Seven-day trip: include more attractions and cultural experiences.")
+
+rule("D8", days == 8,
+     "Eight-day trip: explore all regions with additional nature and heritage experiences.")
+
+rule("D9", days == 9,
+     "Nine-day trip: create a relaxed itinerary with additional exploration time.")
+
+rule("D10", days == 10,
+     "Ten-day trip: create a comprehensive Goa itinerary with sightseeing and relaxed days.")
     rule("S1", season.startswith("Winter"), "Winter preference: use the selected interests and scores; expect popular sites to be busy.")
     rule("S2", season.startswith("Summer"), "Summer preference: favour early/late outdoor visits and add breaks in the hottest hours.")
     rule("S3", season.startswith("Monsoon"), "Monsoon caution: swimming and water activities may be unsafe or suspended; verify local advisories.")
@@ -190,24 +218,63 @@ def greedy_route(day_df):
     ordered_df = pd.DataFrame([rows[n] for n in ordered])
     return ordered_df, distance
 
-def build_itinerary(candidates, days, transport, start_region):
-    max_stops = 2 if transport == "No vehicle" else 3
-    # For short trips, keep the whole plan centred around the starting region.
-    region_order = [start_region]
-    for region in ["North Goa", "Central Goa", "South Goa"]:
-        if region not in region_order: region_order.append(region)
-    result, used = {}, set()
-    for day in range(1, days + 1):
-        preferred = region_order[(day - 1) % (1 if days <= 2 else min(3, len(region_order)))]
-        pool = candidates[(candidates["Region"] == preferred) & (~candidates["Place"].isin(used))]
-        if pool.empty: pool = candidates[~candidates["Place"].isin(used)]
-        picked = pool.head(max_stops).copy()
-        if picked.empty: break
-        picked, _ = greedy_route(picked)
-        result[day] = picked
-        used.update(picked["Place"].tolist())
-    return result
+def build_itinerary(candidates, days, transport, route_order):
 
+    max_stops = 2 if transport == "No vehicle" else 3
+
+    result = {}
+    used = set()
+
+    # Consider only the regions in the selected route
+    route_candidates = candidates[
+        candidates["Region"].isin(route_order)
+    ].copy()
+
+    if route_candidates.empty:
+        route_candidates = candidates.copy()
+
+    for day in range(1, days + 1):
+
+        # Distribute days across the selected regions
+        region_index = min(
+            len(route_order) - 1,
+            ((day - 1) * len(route_order)) // days
+        )
+
+        preferred = route_order[region_index]
+
+        # Find unused attractions in the current region
+        pool = route_candidates[
+            (route_candidates["Region"] == preferred) &
+            (~route_candidates["Place"].isin(used))
+        ]
+
+        # If the region has no more attractions,
+        # find attractions in the remaining route regions
+        if pool.empty:
+
+            remaining_regions = route_order[region_index + 1:]
+
+            pool = route_candidates[
+                (route_candidates["Region"].isin(remaining_regions)) &
+                (~route_candidates["Place"].isin(used))
+            ]
+
+        if pool.empty:
+            break
+
+        # Select the highest-ranked attractions
+        picked = pool.head(max_stops).copy()
+
+        # Arrange them by nearest-next distance
+        picked, _ = greedy_route(picked)
+
+        result[day] = picked
+
+        # Prevent repeated destinations
+        used.update(picked["Place"].tolist())
+
+    return result
 def maps_url(names):
     if not names: return ""
     destination = quote(str(names[-1])) + ", Goa, India"
@@ -269,8 +336,12 @@ except Exception as e:
 
 with st.sidebar:
     st.header("🧭 Build your trip")
-    days_label = st.selectbox("Trip duration", ["1–2 days", "3–4 days", "5+ days"])
-    days = {"1–2 days": 2, "3–4 days": 4, "5+ days": 5}[days_label]
+    days = st.selectbox(
+    "Trip duration",
+    options=list(range(1, 11)),
+    format_func=lambda d: f"{d} day" if d == 1 else f"{d} days",
+    index=1
+)
     season = st.selectbox("Season", SEASONS)
     vibes = st.multiselect("What do you enjoy?", list(VIBE_CATEGORIES), default=["Beach & chill"],
                            help="Choose one or more interests. Recommendations will prioritize the selected categories.")
