@@ -1,0 +1,100 @@
+id,name,type,region,area,budget_level,price_range_inr,nearest_airport,nearest_station,distance_from_dabolim_km,distance_from_mopa_km,beach_access,heritage_nearby,family_friendly,pool,wifi,best_season,min_stay_nights,latitude,longitude,notes
+1,Palolem Beach Resort,Resort,South,Palolem,Medium,3000-5500,Dabolim,Madgaon,65,95,Yes,No,Yes,Yes,Yes,Peak;Shoulder,1,15.01,74.023,Popular South beach resort
+2,Coconut Tree Cottage,Cottage,South,Palolem,Low,1500-2800,Dabolim,Madgaon,66,96,Yes,No,Yes,No,Yes,All,1,15.0095,74.0225,Budget beach cottages
+3,Agonda White Sand,Resort,South,Agonda,Medium,2800-5000,Dabolim,Madgaon,70,100,Yes,No,Yes,Yes,Yes,Peak;Shoulder,1,15.045,73.988,Quieter South beach
+4,Colva Residency,Hotel,South,Colva,Low,1500-2500,Dabolim,Madgaon,35,90,Yes,No,Yes,No,Yes,All,1,15.279,73.922,Budget family hotel
+5,Benaulim Beach Resort,Resort,South,Benaulim,Medium,3200-4800,Dabolim,Madgaon,40,95,Yes,No,Yes,Yes,Yes,Peak;Shoulder,1,15.25,73.92,Family friendly South
+6,Taj Exotica Resort & Spa,Resort,South,Benaulim,High,12000-35000,Dabolim,Madgaon,42,97,Yes,No,Yes,Yes,Yes,Peak;Shoulder,1,15.25,73.915,Luxury South estate
+7,The St. Regis Goa Resort,Resort,South,Cavelossim,High,15000-40000,Dabolim,Madgaon,48,105,Yes,No,Yes,Yes,Yes,Peak;Shoulder,1,15.18,73.96,Ultra luxury South
+8,Park Hyatt Goa Resort,Resort,South,Arossim,High,10000-30000,Dabolim,Madgaon,30,85,Yes,No,Yes,Yes,Yes,Peak;Shoulder,1,15.32,73.9,Indo-Portuguese luxury
+9,Art Resort Palolem,Cottage,South,Palolem,Low,2000-4000,Dabolim,Madgaon,65,95,Yes,No,Yes,No,Yes,All,1,15.012,74.02,Colourful beach cottages
+10,Longuinhos Beach Resort,Resort,South,Colva,Medium,5000-10000,Dabolim,Madgaon,36,91,Yes,No,Yes,No,Yes,Peak;Shoulder,1,15.275,73.92,Direct beach access
+11,Baga Marina Resort,Resort,North,Baga,High,7000-12000,MOPA,Thivim,45,25,Yes,No,Yes,Yes,Yes,Peak,1,15.563,73.755,Party & beach vibe
+12,Calangute Beach Hotel,Hotel,North,Calangute,Medium,3000-5000,MOPA,Thivim,40,30,Yes,No,Yes,Yes,Yes,Peak;Shoulder,1,15.543,73.755,Central North location
+13,Anjuna Palm Grove,Cottage,North,Anjuna,Medium,3500-5500,MOPA,Thivim,42,28,Yes,No,No,No,Yes,Peak,1,15.58,73.74,Hippie & nightlife area
+14,Fort Aguada Beach Resort (Taj),Resort,North,Candolim,High,10000-25000,MOPA,Thivim,38,32,Yes,Yes,Yes,Yes,Yes,Peak;Shoulder,1,15.492,73.773,Luxury with fort views
+15,W Goa,Resort,North,Vagator,High,15000-30000,MOPA,Thivim,48,22,Yes,No,No,Yes,Yes,Peak,1,15.6,73.74,Cliff-edge party luxury
+16,Acron Waterfront Resort,Resort,North,Baga,Medium,5000-9000,MOPA,Thivim,44,26,Yes,No,Yes,Yes,Yes,Peak;Shoulder,1,15.555,73.76,Good value North
+17,Lemon Tree Candolim,Hotel,North,Candolim,Medium,4000-7000,MOPA,Thivim,37,33,Yes,No,Yes,Yes,Yes,Peak;Shoulder,1,15.52,73.765,Reliable mid-range
+18,Morjim Turtle Beach Cottages,Cottage,North,Morjim,Medium,4000-6500,MOPA,Thivim,50,20,Yes,No,Yes,No,Yes,Peak,1,15.63,73.73,Quiet North beach
+19,Skon Morjim Beach Resort,Resort,North,Morjim,High,8000-15000,MOPA,Thivim,52,18,Yes,No,Yes,Yes,Yes,Peak;Shoulder,1,15.635,73.728,Couple-friendly luxury
+20,Cuba Beach Resort,Resort,North,Arambol,Low,2500-5000,MOPA,Thivim,60,15,Yes,No,Yes,No,Yes,All,1,15.686,73.704,Budget North beach
+21,Panjim Inn,Hotel,Central,Panjim,Medium,2800-4500,Dabolim,Karmali,25,55,No,Yes,Yes,No,Yes,All,1,15.4989,73.8278,Heritage style capital
+22,Old Goa Heritage Stay,Homestay,Central,Old Goa,Low,1200-2200,Dabolim,Karmali,20,60,No,Yes,Yes,No,Yes,All,1,15.5,73.91,Near Basilica
+23,Fontainhas Boutique Hotel,Hotel,Central,Panjim,High,6000-9000,Dabolim,Karmali,25,55,No,Yes,Yes,No,Yes,All,1,15.495,73.825,Latin Quarter heritage
+24,Vivanta Goa Panaji,Hotel,Central,Panjim,High,8000-15000,Dabolim,Karmali,22,58,No,Yes,Yes,Yes,Yes,All,1,15.49,73.82,Premium city hotel
+25,Goa Marriott Resort & Spa,Resort,Central,Panjim,High,9000-18000,Dabolim,Karmali,20,60,No,Yes,Yes,Yes,Yes,All,1,15.51,73.83,River-view luxury
+26,Candolim Luxury Villa,LuxuryVilla,North,Candolim,High,12000-25000,MOPA,Thivim,37,33,Yes,No,Yes,Yes,Yes,Peak,2,15.52,73.76,Private pool villa
+27,Palolem Zen Cottage,Cottage,South,Palolem,Low,1600-2400,Dabolim,Madgaon,65,95,Yes,No,Yes,No,Yes,Shoulder;Monsoon,1,15.011,74.021,Quiet budget option
+28,Beleza By The Beach,Hotel,South,Colva,Medium,4000-7000,Dabolim,Madgaon,36,91,Yes,No,Yes,Yes,Yes,Peak;Shoulder,1,15.278,73.921,Boutique beach hotel
+29,Estrela Do Mar Beach Resort,Resort,North,Calangute,Medium,3500-6000,MOPA,Thivim,39,31,Yes,No,Yes,Yes,Yes,Peak;Shoulder,1,15.54,73.755,Beachfront cottages
+30,Ahilya by the Sea,Hotel,North,Nerul,High,12000-25000,MOPA,Thivim,35,35,Yes,No,Yes,Yes,Yes,Peak;Shoulder,1,15.51,73.78,Boutique cliff-edge
+31,Treebo Majestic Palms,Hotel,South,Benaulim,Low,1800-3200,Dabolim,Madgaon,41,96,Yes,No,Yes,No,Yes,All,1,15.255,73.918,Clean budget option
+32,ibis Styles Goa Calangute,Hotel,North,Calangute,Medium,3500-5500,MOPA,Thivim,40,30,Yes,No,Yes,Yes,Yes,Peak;Shoulder,1,15.545,73.752,Modern mid-range
+33,Spazio Leisure Resort,Resort,North,Anjuna,Low,2500-4000,MOPA,Thivim,43,27,Yes,No,Yes,Yes,Yes,All,1,15.575,73.742,Quiet value resort
+34,Poonam Village Resort,Resort,North,Anjuna,Low,2200-3800,MOPA,Thivim,42,28,Yes,No,Yes,Yes,Yes,All,1,15.578,73.745,Budget near nightlife
+35,Alila Diwa Goa,Resort,South,Majorda,High,12000-28000,Dabolim,Madgaon,28,88,Yes,No,Yes,Yes,Yes,Peak;Shoulder,1,15.31,73.91,Eco-luxury
+36,Kenilworth Resort & Spa,Resort,South,Utorda,Medium,6000-12000,Dabolim,Madgaon,32,90,Yes,No,Yes,Yes,Yes,Peak;Shoulder,1,15.3,73.905,Family resort
+37,Citrus Goa Candolim,Hotel,North,Candolim,Medium,4500-8000,MOPA,Thivim,37,33,Yes,No,Yes,Yes,Yes,Peak;Shoulder,1,15.525,73.762,Young couples
+38,Riva Beach Resort,Resort,North,Mandrem,Medium,4000-7000,MOPA,Thivim,55,18,Yes,No,Yes,Yes,Yes,Peak;Shoulder,1,15.65,73.72,Relaxed North
+39,La Cabana Beach & Spa,Resort,North,Morjim,High,9000-16000,MOPA,Thivim,51,19,Yes,No,Yes,Yes,Yes,Peak,1,15.632,73.732,Beachfront spa
+40,Taj Holiday Village,Resort,North,Sinquerim,High,10000-22000,MOPA,Thivim,36,34,Yes,Yes,Yes,Yes,Yes,Peak;Shoulder,1,15.5,73.77,Heritage cottages
+41,Amrapali House of Grace,Homestay,Central,Old Goa,Medium,3000-5000,Dabolim,Karmali,18,62,No,Yes,Yes,No,Yes,All,1,15.505,73.905,Heritage homestay
+42,Vivenda Dos Palhaços,Hotel,Central,Panjim,High,7000-12000,Dabolim,Karmali,24,56,No,Yes,Yes,No,Yes,All,1,15.492,73.828,Boutique heritage
+43,Zostel Goa,GuestHouse,North,Anjuna,Low,800-1800,MOPA,Thivim,43,27,No,No,No,No,Yes,All,1,15.582,73.743,Backpacker hostel
+44,Maria Guest House,GuestHouse,South,Palolem,Low,1200-2200,Dabolim,Madgaon,65,95,Yes,No,Yes,No,Yes,All,1,15.0105,74.022,Simple beach guesthouse
+45,Hyatt Centric Candolim,Hotel,North,Candolim,High,8000-15000,MOPA,Thivim,37,33,Yes,No,Yes,Yes,Yes,Peak;Shoulder,1,15.518,73.763,Modern upscale
+46,JW Marriott Goa,Resort,North,Vagator,High,18000-35000,MOPA,Thivim,47,23,Yes,No,Yes,Yes,Yes,Peak,1,15.598,73.742,Luxury Vagator beach
+47,ibis Styles Goa Vagator,Hotel,North,Vagator,Medium,4000-7000,MOPA,Thivim,48,22,Yes,No,Yes,Yes,Yes,Peak;Shoulder,1,15.597,73.745,Modern near Chapora
+48,Ramada by Wyndham Goa Vagator,Hotel,North,Vagator,Medium,5000-9000,MOPA,Thivim,48,22,Yes,No,Yes,Yes,Yes,Peak;Shoulder,1,15.595,73.748,Pool & near beaches
+49,Whiteflower Cottages Vagator,Cottage,North,Vagator,Medium,3500-6000,MOPA,Thivim,49,21,Yes,No,Yes,No,Yes,Peak,1,15.602,73.738,Garden cottages
+50,The Evren Vagator,Hotel,North,Vagator,High,10000-20000,MOPA,Thivim,48,22,Yes,No,Yes,Yes,Yes,Peak;Shoulder,1,15.599,73.74,Boutique luxury
+51,Alcove Resort Vagator,Resort,North,Vagator,Medium,4500-8000,MOPA,Thivim,49,21,Yes,No,Yes,Yes,Yes,Peak,1,15.601,73.739,Popular mid-range
+52,3102bce Vedic Resort,Resort,North,Vagator,High,9000-18000,MOPA,Thivim,50,20,No,No,Yes,Yes,Yes,Peak;Shoulder,1,15.605,73.735,Vedic themed
+53,Leoney Resort,Resort,North,Vagator,Medium,4000-7000,MOPA,Thivim,49,21,Yes,No,Yes,Yes,Yes,Peak,1,15.603,73.737,Little Vagator beach
+54,Sterling Vagator Beach Resort,Resort,North,Vagator,Medium,5000-9000,MOPA,Thivim,48,22,Yes,No,Yes,Yes,Yes,Peak;Shoulder,1,15.6,73.741,Direct beach access
+55,Seré Resort Goa,Resort,North,Vagator,High,12000-22000,MOPA,Thivim,48,22,Yes,No,Yes,Yes,Yes,Peak,1,15.5985,73.743,Private plunge pools
+56,Golden Tulip Goa Vagator,Hotel,North,Vagator,Medium,4500-8000,MOPA,Thivim,48,22,Yes,No,Yes,Yes,Yes,Peak;Shoulder,1,15.596,73.746,Good value
+58,Nature's Nest Eco Resort,Resort,South,Sanguem,Medium,4000-8000,Dabolim,Madgaon,58,115,No,No,Yes,Yes,Yes,All,1,15.31,74.2,Eco resort near falls
+59,The Postcard Hideaway Netravali,Resort,South,Sanguem,High,15000-35000,Dabolim,Madgaon,60,120,No,No,Yes,Yes,Yes,Peak;Shoulder,1,15.28,74.22,Luxury wildlife sanctuary
+60,Amritara Serenity,Resort,South,Sanguem,Medium,3500-6500,Dabolim,Madgaon,52,108,No,No,Yes,Yes,Yes,All,1,15.3,74.15,Near Salaulim Dam
+61,Jungle Book Resort,Resort,South,Sanguem,Low,2000-4000,Dabolim,Madgaon,50,105,No,No,Yes,No,Yes,All,1,15.34,74.16,Near Mollem / Dudhsagar
+62,Backwoods Camp,Cottage,South,Sanguem,Medium,3500-6000,Dabolim,Madgaon,55,112,No,No,Yes,No,Yes,All,1,15.3,74.21,Birdwatching & jungle
+63,Tanshikar Spice Farm Cottages,Cottage,South,Sanguem,Low,1800-3500,Dabolim,Madgaon,48,100,No,No,Yes,No,Yes,All,1,15.29,74.14,Spice farm stay
+64,Dudhsagar Spa Resort,Resort,South,Sanguem,Medium,4000-7000,Dabolim,Madgaon,53,110,No,No,Yes,Yes,Yes,All,1,15.33,74.17,Near Mollem checkpost
+65,Shangri La Jungle Resort,Resort,South,Sanguem,Medium,3500-6500,Dabolim,Madgaon,54,111,No,No,Yes,Yes,Yes,All,1,15.325,74.175,Jungle resort
+66,Indira Farms,Homestay,South,Sanguem,Low,2000-4000,Dabolim,Madgaon,56,113,No,No,Yes,No,Yes,All,1,15.315,74.185,Farm stay near falls
+67,Hotel Menino,Hotel,Central,Ponda,Low,1500-2800,Dabolim,Karmali,30,70,No,Yes,Yes,No,Yes,All,1,15.4,74.02,Central Ponda hotel
+68,Hotel Menino Executive,Hotel,Central,Ponda,Medium,2500-4500,Dabolim,Karmali,30,70,No,Yes,Yes,No,Yes,All,1,15.402,74.022,Better rooms in Ponda
+69,Treebo Trend Rock Valley,Resort,Central,Ponda,Medium,3000-5500,Dabolim,Karmali,32,72,No,No,Yes,Yes,Yes,All,1,15.41,74.03,Infinity pool & zipline
+70,Farmagudi Residency,Hotel,Central,Ponda,Low,1800-3200,Dabolim,Karmali,28,68,No,Yes,Yes,No,Yes,All,1,15.42,74.01,Hill views
+71,Pascoal Spice Village,Resort,Central,Ponda,Medium,3500-6000,Dabolim,Karmali,35,75,No,No,Yes,Yes,Yes,All,1,15.39,74.05,Spice plantation resort
+72,Savoi Plantation,Homestay,Central,Ponda,Low,1500-3000,Dabolim,Karmali,33,73,No,No,Yes,No,Yes,All,1,15.38,74.04,Traditional plantation stay
+73,Arthav Resort,Resort,Central,Ponda,Medium,2800-5000,Dabolim,Karmali,34,74,No,No,Yes,Yes,Yes,All,1,15.37,74.06,Quiet Ponda resort
+74,Hotel Sun Inn,Hotel,Central,Ponda,Low,1200-2500,Dabolim,Karmali,31,71,No,Yes,Yes,No,Yes,All,1,15.405,74.018,Budget city hotel
+75,Hotel Sanman,Hotel,Central,Ponda,Low,1000-2000,Dabolim,Karmali,30,70,No,Yes,Yes,No,Yes,All,1,15.403,74.019,Simple central stay
+76,Hotel Venkatesh Leela,Hotel,Central,Ponda,Low,1500-2800,Dabolim,Karmali,31,71,No,Yes,Yes,No,Yes,All,1,15.398,74.025,Near temples
+77,Sahay Villa Resort,Resort,Central,Ponda,Medium,3000-5500,Dabolim,Karmali,36,76,No,No,Yes,Yes,Yes,All,1,15.36,74.07,Villa style
+78,Baga Beachway Guest House,GuestHouse,North,Baga,Low,1200-2200,MOPA,Thivim,45,25,Yes,No,Yes,No,Yes,All,1,15.562,73.756,Near nightlife
+79,Romaldo Guest House,GuestHouse,North,Calangute,Low,900-1800,MOPA,Thivim,40,30,Yes,No,Yes,No,Yes,All,1,15.544,73.754,Budget near beach
+80,Adilson Guest House,GuestHouse,North,Calangute,Low,800-1600,MOPA,Thivim,40,30,Yes,No,Yes,No,Yes,All,1,15.542,73.753,Simple clean rooms
+81,Mitra Palolem,Hotel,South,Palolem,Low,1500-2800,Dabolim,Madgaon,65,95,Yes,No,Yes,No,Yes,All,1,15.0115,74.0225,Garden & bar
+82,Gateway Goa Palolem,Hotel,South,Palolem,Medium,4000-7000,Dabolim,Madgaon,65,95,Yes,No,Yes,Yes,Yes,Peak;Shoulder,1,15.009,74.024,Taj group property
+83,Cozy Nook Goa Palolem,Cottage,South,Palolem,Low,1800-3200,Dabolim,Madgaon,66,96,Yes,No,Yes,No,Yes,All,1,15.013,74.019,Quiet north end
+84,Bhakti Kutir,Resort,South,Palolem,Medium,3500-6000,Dabolim,Madgaon,65,95,Yes,No,Yes,No,Yes,Peak;Shoulder,1,15.008,74.025,Eco-friendly
+85,Novotel Goa Dona Sylvia,Resort,South,Cavelossim,High,9000-18000,Dabolim,Madgaon,48,105,Yes,No,Yes,Yes,Yes,Peak;Shoulder,1,15.175,73.965,Large family resort
+86,Radisson Blu Resort Goa,Resort,South,Cavelossim,High,10000-20000,Dabolim,Madgaon,47,104,Yes,No,Yes,Yes,Yes,Peak;Shoulder,1,15.178,73.962,Beachfront luxury
+87,Azaya Beach Resort,Resort,South,Benaulim,High,11000-22000,Dabolim,Madgaon,41,96,Yes,No,Yes,Yes,Yes,Peak;Shoulder,1,15.248,73.917,Stylish South
+88,Planet Hollywood Beach Resort,Resort,South,Majorda,High,10000-20000,Dabolim,Madgaon,27,87,Yes,No,Yes,Yes,Yes,Peak;Shoulder,1,15.315,73.908,Theme resort
+89,Heritage Village Resort & Spa,Resort,South,Arossim,High,9000-18000,Dabolim,Madgaon,31,86,Yes,No,Yes,Yes,Yes,Peak;Shoulder,1,15.318,73.902,Quiet beach luxury
+90,Bogmallo Beach Resort,Resort,South,Bogmalo,Medium,5000-9000,Dabolim,Madgaon,15,75,Yes,No,Yes,Yes,Yes,Peak;Shoulder,1,15.38,73.85,Near airport
+91,Holiday Inn Goa,Hotel,South,Cavelossim,High,8000-15000,Dabolim,Madgaon,48,105,Yes,No,Yes,Yes,Yes,Peak;Shoulder,1,15.182,73.958,Reliable chain
+92,Ramada Caravela Beach Resort,Resort,South,Varca,High,9000-18000,Dabolim,Madgaon,45,100,Yes,No,Yes,Yes,Yes,Peak;Shoulder,1,15.22,73.94,Large beach resort
+93,La Gulls Court,Hotel,North,Vagator,Medium,3500-6000,MOPA,Thivim,49,21,Yes,No,Yes,Yes,Yes,Peak,1,15.604,73.736,Near Vagator beach
+94,Antares Beach Resort,Resort,North,Vagator,Medium,5000-9000,MOPA,Thivim,49,21,Yes,No,Yes,Yes,Yes,Peak,1,15.6015,73.7375,Beachside
+95,Casa Ahaana Resort,Resort,North,Vagator,Medium,4000-7500,MOPA,Thivim,48,22,Yes,No,Yes,Yes,Yes,Peak;Shoulder,1,15.5975,73.744,Quiet option
+96,Red Soil Cozy Cottages,Cottage,North,Vagator,Low,2500-4500,MOPA,Thivim,49,21,Yes,No,Yes,No,Yes,All,1,15.6025,73.7385,Budget cottages
+97,Oia Goa Private Pool Hotel,Hotel,North,Vagator,High,12000-22000,MOPA,Thivim,48,22,Yes,No,Yes,Yes,Yes,Peak,1,15.5995,73.7415,Private pools
+98,Wildernest Nature Resort,Resort,North,Chorla,High,10000-20000,MOPA,Thivim,55,40,No,No,Yes,Yes,Yes,All,1,15.65,74.1,Western Ghats nature
+99,Nirvana Hill Resort,Resort,South,Curtorim,Medium,3000-5500,Dabolim,Madgaon,40,95,No,No,Yes,Yes,Yes,All,1,15.28,74.05,Hill resort near Sanguem
+100,RevTree Dark Forest Inn,Homestay,South,Sanguem,Low,1800-3500,Dabolim,Madgaon,55,112,No,No,Yes,No,Yes,All,1,15.335,74.165,Forest stay near Dudhsagar
