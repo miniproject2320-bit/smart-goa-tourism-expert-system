@@ -519,6 +519,142 @@ def haversine(lat1, lon1, lat2, lon2):
     )
 
 
+# ============================================================
+# A* SEARCH ALGORITHM
+# ============================================================
+
+def astar_route(places, start_name, goal_name, k=5):
+    """
+    Find an approximate shortest path between two places.
+    Uses a k-nearest-neighbour graph and Haversine distances.
+    """
+
+    df = places.dropna(
+        subset=["Latitude", "Longitude"]
+    ).copy()
+
+    df["Latitude"] = pd.to_numeric(
+        df["Latitude"], errors="coerce"
+    )
+    df["Longitude"] = pd.to_numeric(
+        df["Longitude"], errors="coerce"
+    )
+
+    df = df.dropna(
+        subset=["Latitude", "Longitude"]
+    ).reset_index(drop=True)
+
+    # Map destination names to row indexes
+    name_to_index = {
+        str(row["Place"]): i
+        for i, row in df.iterrows()
+    }
+
+    if start_name not in name_to_index:
+        return None, 0
+
+    if goal_name not in name_to_index:
+        return None, 0
+
+    start = name_to_index[start_name]
+    goal = name_to_index[goal_name]
+
+    if start == goal:
+        return [start_name], 0.0
+
+    # Build a graph connecting each place to its
+    # k nearest neighbours.
+    graph = {i: {} for i in range(len(df))}
+
+    for i, row in df.iterrows():
+
+        distances = []
+
+        for j, other in df.iterrows():
+
+            if i == j:
+                continue
+
+            distance = haversine(
+                row["Latitude"],
+                row["Longitude"],
+                other["Latitude"],
+                other["Longitude"]
+            )
+
+            distances.append((distance, j))
+
+        for distance, j in sorted(distances)[:k]:
+
+            graph[i][j] = distance
+            graph[j][i] = distance
+
+    # A* heuristic: straight-line distance to destination
+    def heuristic(node):
+
+        current = df.iloc[node]
+        destination = df.iloc[goal]
+
+        return haversine(
+            current["Latitude"],
+            current["Longitude"],
+            destination["Latitude"],
+            destination["Longitude"]
+        )
+
+    open_list = [(heuristic(start), 0.0, start)]
+
+    came_from = {}
+    g_score = {start: 0.0}
+
+    visited = set()
+
+    while open_list:
+
+        _, current_cost, current = heapq.heappop(
+            open_list
+        )
+
+        if current in visited:
+            continue
+
+        visited.add(current)
+
+        if current == goal:
+
+            path = [current]
+
+            while current in came_from:
+                current = came_from[current]
+                path.append(current)
+
+            path.reverse()
+
+            route_names = [
+                str(df.iloc[i]["Place"])
+                for i in path
+            ]
+
+            return route_names, current_cost
+
+        for neighbour, edge_cost in graph[current].items():
+
+            new_cost = current_cost + edge_cost
+
+            if new_cost < g_score.get(neighbour, float("inf")):
+
+                g_score[neighbour] = new_cost
+                came_from[neighbour] = current
+
+                f_score = new_cost + heuristic(neighbour)
+
+                heapq.heappush(
+                    open_list,
+                    (f_score, new_cost, neighbour)
+                )
+
+    return None, 0.0
+
 def maps_url(names, mode="driving"):
 
     if not names:
