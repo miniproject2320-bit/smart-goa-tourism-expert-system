@@ -368,13 +368,8 @@ div[data-testid="stVerticalBlockBorderWrapper"] {
         Discover · Explore · Experience
     </div>
 
-    <h1>Find your kind of Goa.</h1>
-
-    <p>
-        Beaches, hidden corners, heritage, food and memorable
-        experiences. Explore places and plan an easier trip around Goa.
-    </p>
-</div>
+ 
+    </div>
 """, unsafe_allow_html=True)
 
 st.info(
