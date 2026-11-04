@@ -154,7 +154,7 @@ rule("B2", budget == "High", "High budget: allow higher-cost experiences where t
 rule("T1", transport == "No vehicle", "No vehicle: favour a compact region plan and fewer stops per day.")
 rule("T2", transport == "Own scooter or car", "Own transport: allow a few more stops, while still grouping nearby places.")
 
-    df = places.copy()
+df = places.copy()
     selected_categories = {cat for vibe in vibes for cat in VIBE_CATEGORIES.get(vibe, [])}
     if selected_categories:
         matching = df[df["Category"].isin(selected_categories)].copy()
