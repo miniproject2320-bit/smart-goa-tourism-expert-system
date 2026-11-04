@@ -7,7 +7,22 @@ from urllib.parse import quote
 import pandas as pd
 import pydeck as pdk
 import streamlit as st
+def haversine(lat1, lon1, lat2, lon2):
+    radius = 6371.0
 
+    lat1 = math.radians(float(lat1))
+    lat2 = math.radians(float(lat2))
+
+    dlat = math.radians(float(lat2) - float(lat1))
+    dlon = math.radians(float(lon2) - float(lon1))
+
+    a = (
+        math.sin(dlat / 2) ** 2
+        + math.cos(lat1) * math.cos(lat2)
+        * math.sin(dlon / 2) ** 2
+    )
+
+    return 2 * radius * math.asin(math.sqrt(a))
 
 # ============================================================
 # 1. PAGE CONFIGURATION
